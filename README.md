@@ -1,1 +1,1 @@
-# ComicGeroes-SPA
+# ComicHeroes-SPA
