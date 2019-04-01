@@ -1,5 +1,13 @@
-<h1> <small> Marvel and DC </small> Heroes </h1>
+<h1> <small> Search </small> {{ termino }} </h1>
 <hr>
+
+<div *ngIf="heroes.length == 0" class="row animated fadeIn fast">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            There aren't results about the search
+        </div>
+    </div>
+</div>
 
 <div class="card-columns">
 
@@ -9,8 +17,8 @@
             <h5 class="card-title">{{ heroe.nombre }}</h5>
             <p class="card-text"> {{ heroe.bio }}</p>
             <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
-            <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block"> more... 
-            </button>
+            <!-- <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block"> more...  -->
+            <!-- </button> -->
             <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary"> more...</a> -->
 
         </div>
